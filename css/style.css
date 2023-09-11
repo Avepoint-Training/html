@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.default-theme {
+    --background-color: #65ced1;
+    --text-color: #000000;
+    --hr-color: #000000;
+    --background-card: #ffffff;
+}
+
+.yellow-theme {
+    --background-color: yellow;
+    --text-color: #000000;
+    --hr-color: #000000;
+    --background-card: #ffffff;
+}
+
+.dark-theme {
+    --background-color: black;
+    --text-color: #ffffff;
+    --hr-color: #ffffff;
+    --background-card: #757d758f;
+}
+
+main {
+    transition: background 0.5s;
+    min-height: 100vh;
+    background: var(--background-color);
+    padding: 0 10%;
+}
+
+ul li, ol li, h1, h2 {
+    word-break: break-all;
+    color: var(--text-color);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--hr-color);
+}
+
+.header-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-page div {
+    margin-left: auto;
+}
+
+.info-content {
+    display: flex;
+    align-items: flex-end;
+}
+
+.info-content img {
+    width: 10%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.projects {
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projects .card {
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--background-card);
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.projects .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.projects .card a {
+    display: block;
+    text-align: center;
+    color: var(--text-color);
+}
